@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/close_app"
+        android:icon="@drawable/ic_ios"
+        app:showAsAction="always"
+        android:title="@string/go_to_android" />
+    <item
+        android:id="@+id/go_to_android"
+        android:title="@string/go_to_android" />
+</menu>

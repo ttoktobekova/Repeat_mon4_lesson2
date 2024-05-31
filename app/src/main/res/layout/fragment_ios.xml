@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_cat_cute"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".UI.fragment.IosFragment">
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/get_email"
+        android:textColor="@color/white"
+        android:textSize="44sp" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/get_password"
+        android:textColor="@color/white"
+        android:textSize="44sp" />
+
+
+</LinearLayout>

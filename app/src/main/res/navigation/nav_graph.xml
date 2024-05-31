@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.repeatmon4lesson2.UI.fragment.HomeFragment"
+        android:label="fragment_android"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_iosFragment"
+            app:destination="@id/iosFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/iosFragment"
+        android:name="com.example.repeatmon4lesson2.UI.fragment.IosFragment"
+        android:label="fragment_ios"
+        tools:layout="@layout/fragment_ios">
+        <argument
+            android:name="email"
+            android:defaultValue=" "
+            app:argType="string" />
+        <argument
+            android:name="password"
+            android:defaultValue=" "
+            app:argType="string" />
+        <argument
+            app:nullable="true"
+            android:name="model"
+            app:argType="com.example.repeatmon4lesson2.models.RegisterModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskCreateFragment"
+        android:name="com.example.repeatmon4lesson2.UI.fragment.TaskCreateFragment"
+        android:label="fragment_task_create"
+        tools:layout="@layout/fragment_task_create" />
+</navigation>

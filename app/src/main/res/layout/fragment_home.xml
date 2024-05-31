@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_cat_bg"
+    android:orientation="vertical"
+    tools:context=".UI.fragment.HomeFragment">
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:hint="@string/enter_email"
+        android:textColorHint="@color/open_white"
+        android:textSize="44sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:hint="@string/enter_password"
+        android:textColorHint="@color/open_white"
+        android:textSize="44sp" />
+
+    <Button
+        android:id="@+id/btn_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/brown"
+        android:text="@string/open_to_fragment"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>
